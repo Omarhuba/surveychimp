@@ -22,7 +22,9 @@ export function App() {
         />
         <Route
           path="/"
-          element={<div>Du är på förstasidan</div>} />
+          element={<div>
+            <h1>Du är första sidan</h1>
+          </div>} />
       </Routes>
     </StyledApp>
   );
