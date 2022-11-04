@@ -28,6 +28,7 @@ export function App() {
   );
 
 }
+console.log('hej');
 
 
 export default App;
