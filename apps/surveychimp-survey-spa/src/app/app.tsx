@@ -1,6 +1,9 @@
 
 import styled from 'styled-components';
 import SurveyPage from './pages/SurveyPage';
+import StartPage from './pages/StartPage';
+
+
 import { Route, Routes } from 'react-router-dom';
 // import {Rating} from '../components/ReactStar'
 import ReactStars from 'react-stars'
@@ -26,7 +29,7 @@ export function App() {
         />
         <Route
           path="/"
-          element={<div>Du är på förstasidan</div>} />
+          element={<StartPage/>} />
       </Routes>
     </StyledApp>
   );
