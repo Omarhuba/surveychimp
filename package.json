@@ -7,12 +7,15 @@
     "start:surveychimp-api": "nx serve surveychimp-api",
     "start:surveychimp-spa": "nx serve surveychimp-survey-spa",
     "build": "nx build",
+    "start:survey-spa": "nx serve surveychimp-survey-spa",
+    "start:api": "nx serve surveychimp-api",
     "test": "nx test",
     "test:api": "nx run surveychimp-api:test",
     "test:survey-spa": "nx run surveychimp-survey-spa:test"
   },
   "private": true,
   "dependencies": {
+    "@sentry/node": "^7.19.0",
     "@sentry/react": "^7.19.0",
     "@sentry/tracing": "^7.19.0",
     "core-js": "^3.6.5",
