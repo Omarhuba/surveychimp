@@ -1,9 +1,12 @@
 
 import styled from 'styled-components';
 import SurveyPage from './pages/SurveyPage';
+import StartPage from './pages/StartPage';
+
 
 import { Route, Routes } from 'react-router-dom';
-
+// import {Rating} from '../components/ReactStar'
+import ReactStars from 'react-stars'
 
 
 const StyledApp = styled.div`
@@ -17,17 +20,22 @@ export function App() {
     <StyledApp>
       <Routes>
         <Route
-          path="/survey/:surveyId"
+          path="/survey"
           element={<SurveyPage />}
         />
         <Route
+          path="/rating"
+          element={<ReactStars />}
+        />
+        <Route
           path="/"
-          element={<div>Du är på förstasidan</div>} />
+          element={<StartPage/>} />
       </Routes>
     </StyledApp>
   );
 
 }
+
 
 
 export default App;

@@ -1,9 +1,20 @@
 import { Router } from 'express';
 import { addSurvey, addResponseToSurvey, getSurveyById, getSurvey } from '@surveychimp/surveychimp-lib';
 import { body, param, validationResult } from 'express-validator';
-import { nextTick } from 'process';
 
 const router = Router();
+
+router.get(
+    '/survey',
+    async (req, res, next) => {
+        try {
+            const surveys = await getSurvey();
+            res.json(surveys);
+        } catch (err) {
+            next(err);
+        }
+
+    });
 
 router.get(
     '/survey/:surveyId',
@@ -24,6 +35,7 @@ router.get(
         }
 
     });
+
 router.get(
     '/survey',
     async (req, res, next) => {
