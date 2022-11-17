@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import getSurveyById from '../../api/getSurveyById';
 import { ISurvey } from '@surveychimp/surveychimp-lib';
 
-import useAnalyticsEventTracker from '../hooks/useAnalyticsEventTracker'
+import useAnalyticsEventTracker from '../pages/hooks/useAnalyticsEventTracker';
 import ReactStars from 'react-stars';
 
 export const SurveyPage = () => {
