@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import getSurveyById from '../../api/getSurveyById';
 import { ISurvey } from '@surveychimp/surveychimp-lib';
 
-import useAnalyticsEventTracker from '../hooks/useAnalyticsEventTracker'
+import useAnalyticsEventTracker from '../pages/hooks/useAnalyticsEventTracker'
 import ReactStars from 'react-stars';
 
 export const SurveyPage = () => {
@@ -32,7 +32,7 @@ export const SurveyPage = () => {
       <h1>hello error</h1>
       <ReactStars
         count={5}
-        onChange={() => { gaEventTracker ('rate')}}
+        onChange={() => {  gaEventTracker('rate')}}
         size={24}
         color2={'#ffd700'}
       />
