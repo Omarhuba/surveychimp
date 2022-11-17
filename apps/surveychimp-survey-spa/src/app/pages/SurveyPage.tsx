@@ -27,15 +27,14 @@ export const SurveyPage = () => {
     <>
       <h1>Survey</h1>
       <p>{survey?.recipient.name}</p>
-      <h1>hello error/h1>
+      <h1>hello error</h1>
       <ReactStars
         count={5}
         onChange={ratingChanged}
         size={24}
         color2={'#ffd700'}
-        />
-
-        </>
+      />
+    </>
   );
 };
 
