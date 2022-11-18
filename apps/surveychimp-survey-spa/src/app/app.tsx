@@ -12,20 +12,19 @@ import { Route, Routes } from 'react-router-dom';
 // import {Rating} from '../components/ReactStar'
 import ReactStars from 'react-stars'
 
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 const StyledApp = styled.div`
     // Your style here
 `;
-const TRACKING_ID = "G-SDESYVPF92"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
-
+ReactGA.initialize("G-Q65BBQGGHW");
+ReactGA.send("pageview");
 
 
 
 export function App() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send("pageview");
   }, []);
   return (
     <StyledApp>
